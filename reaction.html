@@ -41,7 +41,8 @@
     }
 
     function startTime() {
-      for (let i = 0; i < 4; i++) {
+      countDown = generateRandomNumber(2,10)
+      for (let i = 0; i < countDown; i++) {
         setTimeout(() => {
           document.getElementById("countdown").innerHTML = i
         }, (3 - i) * 1000)
@@ -57,6 +58,10 @@
           document.getElementById("target").innerHTML = "Time was " + elapsedTime
         }
       }, 3000)
+    }
+    
+    function generateRandomNumber(min, max){
+      return Math.floor(Math.random() * (max - min +1 )) + min;
     }
   </script>
 

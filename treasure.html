@@ -32,9 +32,10 @@
         <div class="container bg-success" style="color:white">
                 <P id="help">Help report</P>
         </div>
-        <div class="container bg-dark" style="color:white">
-                <P id="help">New Game</P>
-        </div>
+      
+        <center>
+        <button type="button" onclick="reset()" id="newGame" class="btn btn-secondary">New game</button>
+        </center>
 
         <div class="container" style="padding-left: 200px;">
                 <div class="row">
@@ -110,7 +111,7 @@
                 var chestCount = 0
                 var score = 0
                 var lastCheck = 12
-                treasureLocation = 18
+                treasureLocation = Math.floor(Math.random() * 25)
 
                 function check(position) {
 
@@ -170,6 +171,27 @@
                                 document.getElementById("help").innerHTML = "sorry, no help available"
                         }
                 }
+
+                function generateRandomNumber(min, max) {
+                        return Math.floor(Math.random() * (max - min + 1)) + min;
+                }
+
+                function reset() {
+                        chestCount = 0;
+                        score = 0;
+                        lastCheck = 12;
+                        treasureLocation = generateRandomNumber(0, 24);
+                        document.getElementById('chests').innerHTML = "Number of chests checked is " + chestCount;
+                        document.getElementById('score').innerHTML = "Score is  " + score;
+                        document.getElementById('help').innerHTML = "Help report";
+                        for (let i = 0; i <= ids.length; i++) {
+                                if (i != 12) {
+                                        document.getElementById(i).src = "./images/one.jpg";
+                                }
+                        }
+                }
+
+
 
 
 
