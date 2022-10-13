@@ -2,102 +2,175 @@
 <html lang="en">
 
 <head>
-    <title>Treasure hunt</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Treasure hunt</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
-        crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+                integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+                crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+                integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+                crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+                integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+                crossorigin="anonymous"></script>
 
 </head>
 
 <body>
-    <h1 class="display-4">Tresure Hunt Sowmya Reddy Bodlapati</h1><br>
-    <div class="container display-6">
-        <p>Click on the chests to search for treasure</p>
-    </div>
-    <div class="container bg-primary" style="color:white">
-        <p id="chests">Number of chests checked is zero.</p>
-    </div>
-    <div class="container bg-secondary" style="color:white">
-        <p id="score">Score is unknown.</p>
-    </div>
-    <div class="container bg-success" style="color:white">
-        <P id="help">Help report</P>
-    </div>
-
-    <div class="container" style="padding-left: 200px;">
-        <div class="row">
-            <div class="col-sm-1"><img src="./images/one.jpg" alt="chest"
-                    style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
-            <div class="col-sm-1"><img src="./images/one.jpg" alt="chest"
-                    style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
-            <div class="col-sm-1"><img src="./images/one.jpg" alt="chest"
-                    style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
-            <div class="col-sm-1"><img src="./images/one.jpg" alt="chest"
-                    style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
-            <div class="col-sm-1"><img src="./images/one.jpg" alt="chest"
-                    style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
-
+        <h1 class="display-4">Tresure Hunt Sowmya Reddy Bodlapati</h1><br>
+        <div class="container display-6">
+                <p>Click on the chests to search for treasure</p>
         </div>
-        <div class="row">
-            <div class="col-sm-1"><img src="./images/one.jpg" alt="chest"
-                    style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
-            <div class="col-sm-1"><img src="./images/one.jpg" alt="chest"
-                    style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
-            <div class="col-sm-1"><img src="./images/one.jpg" alt="chest"
-                    style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
-            <div class="col-sm-1"><img src="./images/one.jpg" alt="chest"
-                    style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
-            <div class="col-sm-1"><img src="./images/one.jpg" alt="chest"
-                    style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
-
+        <div class="container bg-primary" style="color:white">
+                <p id="chests">Number of chests checked is zero.</p>
         </div>
-        <div class="row">
-            <div class="col-sm-1"><img src="./images/one.jpg" alt="chest"
-                    style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
-            <div class="col-sm-1"><img src="./images/one.jpg" alt="chest"
-                    style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
-            <div class="col-sm-1"></div>
-            <div class="col-sm-1"><img src="./images/one.jpg" alt="chest"
-                    style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
-            <div class="col-sm-1"><img src="./images/one.jpg" alt="chest"
-                    style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
-
+        <div class="container bg-secondary" style="color:white">
+                <p id="score">Score is unknown.</p>
         </div>
-        <div class="row">
-            <div class="col-sm-1"><img src="./images/one.jpg" alt="chest"
-                    style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
-            <div class="col-sm-1"><img src="./images/one.jpg" alt="chest"
-                    style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
-            <div class="col-sm-1"><img src="./images/one.jpg" alt="chest"
-                    style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
-            <div class="col-sm-1"><img src="./images/one.jpg" alt="chest"
-                    style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
-            <div class="col-sm-1"><img src="./images/one.jpg" alt="chest"
-                    style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
-
+        <div class="container bg-success" style="color:white">
+                <P id="help">Help report</P>
         </div>
-        <div class="row">
-            <div class="col-sm-1"><img src="./images/one.jpg" alt="chest"
-                    style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
-            <div class="col-sm-1"><img src="./images/one.jpg" alt="chest"
-                    style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
-            <div class="col-sm-1"><img src="./images/one.jpg" alt="chest"
-                    style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
-            <div class="col-sm-1"><img src="./images/one.jpg" alt="chest"
-                    style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
-            <div class="col-sm-1"><img src="./images/one.jpg" alt="chest"
-                    style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
 
+        <div class="container" style="padding-left: 200px;">
+                <div class="row">
+                        <div class="col-sm-1"><img src="./images/one.jpg" id="0" onclick="check(0)" alt="chest"
+                                        style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+                        <div class="col-sm-1"><img src="./images/one.jpg" id="1" onclick="check(1)" alt="chest"
+                                        style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+                        <div class="col-sm-1"><img src="./images/one.jpg" id="2" onclick="check(2)" alt="chest"
+                                        style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+                        <div class="col-sm-1"><img src="./images/one.jpg" id="3" onclick="check(3)" alt="chest"
+                                        style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+                        <div class="col-sm-1"><img src="./images/one.jpg" id="4" onclick="check(4)" alt="chest"
+                                        style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+
+                </div>
+                <div class="row">
+                        <div class="col-sm-1"><img src="./images/one.jpg" id="5" onclick="check(5)" alt="chest"
+                                        style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+                        <div class="col-sm-1"><img src="./images/one.jpg" id="6" onclick="check(6)" alt="chest"
+                                        style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+                        <div class="col-sm-1"><img src="./images/one.jpg" id="7" onclick="check(7)" alt="chest"
+                                        style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+                        <div class="col-sm-1"><img src="./images/one.jpg" id="8" onclick="check(8)" alt="chest"
+                                        style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+                        <div class="col-sm-1"><img src="./images/one.jpg" id="9" onclick="check(9)" alt="chest"
+                                        style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+
+                </div>
+                <div class="row">
+                        <div class="col-sm-1"><img src="./images/one.jpg" id="10" onclick="check(10)" alt="chest"
+                                        style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+                        <div class="col-sm-1"><img src="./images/one.jpg" id="11" onclick="check(11)" alt="chest"
+                                        style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+                        <div class="col-sm-1"><img src="./images/four.jpg" id="12" onclick="help()" alt="chest"
+                                        style="width: 80px;height: 80px; padding-bottom: 5%;"></div>
+                        <div class="col-sm-1"><img src="./images/one.jpg" id="13" onclick="check(13)" alt="chest"
+                                        style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+                        <div class="col-sm-1"><img src="./images/one.jpg" id="14" onclick="check(14)" alt="chest"
+                                        style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+
+                </div>
+                <div class="row">
+                        <div class="col-sm-1"><img src="./images/one.jpg" id="15" onclick="check(15)" alt="chest"
+                                        style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+                        <div class="col-sm-1"><img src="./images/one.jpg" id="16" onclick="check(16)" alt="chest"
+                                        style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+                        <div class="col-sm-1"><img src="./images/one.jpg" id="17" onclick="check(17)" alt="chest"
+                                        style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+                        <div class="col-sm-1"><img src="./images/one.jpg" id="18" onclick="check(18)" alt="chest"
+                                        style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+                        <div class="col-sm-1"><img src="./images/one.jpg" id="19" onclick="check(19)" alt="chest"
+                                        style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+
+                </div>
+                <div class="row">
+                        <div class="col-sm-1"><img src="./images/one.jpg" id="20" onclick="check(20)" alt="chest"
+                                        style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+                        <div class="col-sm-1"><img src="./images/one.jpg" id="21" onclick="check(21)" alt="chest"
+                                        style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+                        <div class="col-sm-1"><img src="./images/one.jpg" id="22" onclick="check(22)" alt="chest"
+                                        style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+                        <div class="col-sm-1"><img src="./images/one.jpg" id="23" onclick="check(23)" alt="chest"
+                                        style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+                        <div class="col-sm-1"><img src="./images/one.jpg" id="24" onclick="check(24)" alt="chest"
+                                        style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+
+                </div>
         </div>
-    </div>
+
+        <script>
+                ids = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24"];
+
+                var chestCount = 0
+                var score = 0
+                var lastCheck = 12
+                treasureLocation = 18
+
+                function check(position) {
+
+                        imageId = ids[position]
+
+                        imgPos = document.getElementById(imageId)
+
+                        if (position == treasureLocation) {
+                                imgPos.src = "./images/two.jpg"
+                                score = score + 1
+
+                        }
+                        else {
+                                imgPos.src = "./images/third.jpg"
+                        }
+
+
+                        chestCount += 1
+                        document.getElementById("chests").innerHTML = "Number of chests checked is " + chestCount
+                        document.getElementById("score").innerHTML = "Score is: " + score
+
+                        lastCheck = position
+                }
+
+                function help() {
+                        var row = lastCheck % 5
+                        var col = Math.floor(lastCheck / 5)
+
+                        var treasureRow = treasureLocation % 5
+                        var treasureCol = Math.floor(treasureLocation / 5)
+
+                        score = score + 2
+
+                        document.getElementById("score").innerHTML = "Score is " + score
+
+                        if (row == treasureRow && lastCheck != treasureLocation) {
+                                if (col > treasureCol) {
+                                        document.getElementById("help").innerHTML = "up"
+                                }
+                                else {
+                                        document.getElementById("help").innerHTML = "down"
+                                }
+
+                        }
+                        else if (col == treasureCol && lastCheck != treasureLocation) {
+                                if (row > treasureRow) {
+                                        document.getElementById("help").innerHTML = "left"
+                                }
+                                else {
+                                        document.getElementById("help").innerHTML = "right"
+                                }
+                        }
+                        else if (treasureLocation == lastCheck) {
+                                document.getElementById("help").innerHTML = "already won the game"
+                        }
+                        else {
+                                document.getElementById("help").innerHTML = "sorry, no help available"
+                        }
+                }
+
+
+
+        </script>
 
 </body>
 
