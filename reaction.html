@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Reaction Page</title>
   <meta charset="utf-8">
@@ -9,54 +10,56 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
+
 <body>
   <center>
-  <h2 style="color: rgb(246, 12, 8);">reaction timer by Sowmya Reddy Bodlapati</h2>
+    <h2 style="color: rgb(246, 12, 8);">reaction timer by Sowmya Reddy Bodlapati</h2>
 
-  <hr>
+    <hr>
 
-  <div id="target">
-    <p>Your time</p>
-  </div>
-  
-  <div id="countdown">
-    <p>Count</p>
-  </div>
+    <div id="target">
+      <p>Your time</p>
+    </div>
 
-  <button type="button" class="btn btn-success" onclick="startTime()">Start Timer</button>
-  <button type="button" class="btn btn-success" onclick="recordReact()">React Now</button>
-</center>
-  
-  
-  <script> 
+    <div id="countdown">
+      <p>Count</p>
+    </div>
 
-      myTime = undefined;
+    <button type="button" class="btn btn-success" onclick="startTime()">Start Timer</button>
+    <button type="button" class="btn btn-success" onclick="recordReact()">React Now</button>
+  </center>
 
-      function recordReact(){
-        myTime = Date.now()
 
-        console.log(new Date(myTime))
-      }
+  <script>
 
-      function startTime(){
-        for(let i=0; i<4;i++){
-          setTimeout(()=> {
-            document.getElementById("countdown").innerHTML = i
-          }, (3-i) * 1000)
-        }
+    myTime = undefined;
 
+    function recordReact() {
+      myTime = Date.now()
+
+      console.log(new Date(myTime))
+    }
+
+    function startTime() {
+      for (let i = 0; i < 4; i++) {
         setTimeout(() => {
-          if(myTime == undefined){
-            document.getElementById("target").innerHTML = "Too Slow"
-          }
-          else{
-            var buttonTime = Date.now()
-            elapsedTime = (buttonTime - myTime)
-            document.getElementById("target").innerHTML = "Time was " + elapsedTime
-          }
-        }, 3000)
+          document.getElementById("countdown").innerHTML = i
+        }, (3 - i) * 1000)
       }
+
+      setTimeout(() => {
+        if (myTime == undefined) {
+          document.getElementById("target").innerHTML = "Too Slow"
+        }
+        else {
+          var buttonTime = Date.now()
+          elapsedTime = (buttonTime - myTime)
+          document.getElementById("target").innerHTML = "Time was " + elapsedTime
+        }
+      }, 3000)
+    }
   </script>
 
 </body>
+
 </html>
