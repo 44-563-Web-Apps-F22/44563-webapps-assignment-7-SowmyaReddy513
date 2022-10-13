@@ -10,8 +10,10 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
+  <center>
+  <h2 style="color: rgb(246, 12, 8);">reaction timer by Sowmya Reddy Bodlapati</h2>
 
-  <h2>reaction timer by Sowmya Reddy Bodlapati</h2>
+  <hr>
 
   <div id="target">
     <p>Your time</p>
@@ -23,7 +25,7 @@
 
   <button type="button" class="btn btn-success" onclick="startTime()">Start Timer</button>
   <button type="button" class="btn btn-success" onclick="recordReact()">React Now</button>
-  
+</center>
   
   
   <script> 
@@ -36,6 +38,24 @@
         console.log(new Date(myTime))
       }
 
+      function startTime(){
+        for(let i=0; i<4;i++){
+          setTimeout(()=> {
+            document.getElementById("countdown").innerHTML = i
+          }, (3-i) * 1000)
+        }
+
+        setTimeout(() => {
+          if(myTime == undefined){
+            document.getElementById("target").innerHTML = "Too Slow"
+          }
+          else{
+            var buttonTime = Date.now()
+            elapsedTime = (buttonTime - myTime)
+            document.getElementById("target").innerHTML = "Time was " + elapsedTime
+          }
+        }, 3000)
+      }
   </script>
 
 </body>
